@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    template="template.xhtml"
+    xmlns:p="http://primefaces.org/ui">
+    <ui:define name="bellezas">
+     <h:head>
+            <title>Belleza</title>
+        </h:head>
+        <style>
+            #body {
+                background-color: white;
+            }
+
+            p {
+                font-family: Times New Roman;
+                font-size: 20px;
+            }
+            #h3 {
+                font-family: Times New Roman;
+                font-size: 30px;
+            }
+        </style>
+        <h:body>
+            <h:form>
+                <p:outputPanel deferred="true" deferredMode="visible">
+                    <center>
+                        <h3 id="h3">Belleza</h3>
+                        <div style="height:10px"></div>
+                <p:contentFlow>
+                    <p:graphicImage value="/resources/images/belleza.png"
+                                    styleClass="content" title="Práctica en uñas acrílica"/>
+                    <p:graphicImage value="/resources/images/belleza1.png"
+                                    styleClass="content" title="Práctica con los respectivos elementos"/>
+                    <p:graphicImage value="/resources/images/belleza4.png"
+                                    styleClass="content" title="Práctica de manicure con modelo"/>
+                    <p:graphicImage value="/resources/images/belleza3.png"
+                                    styleClass="content" title="Prácica de pedicure"/>
+                </p:contentFlow>
+                    </center>
+                    <p>En el curso de Cosmetología te daremos el conocimiento necesario para el uso adecuado de los cosméticos. 
+                        Se te capacitara para poder reconocer los diferentes tipos de piel, y sus necesidades, lo cual te permitirá ofrecer a tus clientes tratamientos más eficientes.
+                        Brindándote las herramientas necesarias para poder obtener una salida laboral rápida ya sea desempeñándote en centros de estética, spas, laboratorios, o bien de forma independiente.</p>
+                    <div style="height:30px"></div>
+                    <h1 id="p2">OBJETIVOS:</h1>
+
+                    <p>Brindar conocimientos acerca de los pasos a seguir y los procedimientos utilizados en la realización de diversos tratamientos de limpieza de rostro, 
+                        hidratación, máscaras, peeling, limpieza profunda, etc., para aplicarlos en el desarrollo profesional en salones, institutos de belleza, laboratorios, 
+                        desfiles o de manera independiente. </p>
+                    <div style="height:30px"></div>
+                    
+                 </p:outputPanel>
+
+                <br></br>
+            </h:form>
+        </h:body>
+ </ui:define>
+</ui:composition>
+

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+
+        <style>
+            #p {
+                font-family: Times New Roman;
+                font-size: 15px;
+            }
+        </style>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="/css/default.css"/> 
+        <h:outputStylesheet name="/css/cssLayout.css"/>
+        <h:outputStylesheet library="css" name="jsfcrud.css"/>
+        <h:outputScript library="js" name="jsfcrud.js"/>
+        <title>Centro de Formación Artesanal "Victoria"</title>
+        
+    </h:head>
+    
+
+   
+    <h:body>
+        <div id="top">
+            <ui:insert name="top">
+                <center>
+                    <h1>Centro de Formación Artesanal "Victoria" </h1>
+                    <p:graphicImage url="/resources/images/logocentro.png" style="height: 120px"/>
+                </center>
+            </ui:insert>
+        </div>
+
+        <h:form>  
+            <p:growl id="messages"/>
+            <p:menubar>
+                <p:menuitem value="Inicio" url="index.jsf" icon="ui-icon-home"></p:menuitem>
+                <p:menuitem value="Inscripción a Cursos" url="alumnos-muestra.jsf"></p:menuitem>
+                <p:submenu label="Cursos" icon="ui-icon-suitcase">
+                    <p:menuitem value="Cosmetología" url="cosmetologia.jsf" icon="ui-icon-pin-s"></p:menuitem>
+                    <p:menuitem value="Belleza" url="belleza.jsf" icon="ui-icon-pin-s"></p:menuitem>
+                    <p:menuitem value="Cocina Chef" url="cocina.jsf" icon="ui-icon-pin-s"></p:menuitem>
+                    <p:menuitem value="Peluquería" url="peluqueria.jsf" icon="ui-icon-pin-s"></p:menuitem>
+                    <p:menuitem value="Corte, Confección y Bordado" url="corte.jsf" icon="ui-icon-pin-s"></p:menuitem>
+                </p:submenu>
+                <p:menuitem value="Noticia" url="noticias.jsf" icon="ui-icon-info"></p:menuitem>
+                <p:menuitem value="Misión y Visión" url="misionvision.jsf" icon="ui-icon-flag" />
+                <p:menuitem value="Objetivos Institucionales" url="objetivos.jsf" icon="ui-icon-lightbulb" />
+                <p:menuitem value="Contáctanos" url="contactenos.jsf" icon="ui-icon-person"></p:menuitem>
+                <p:menuitem value="Login" url="Login.jsf" icon="ui-icon-key"></p:menuitem>
+            </p:menubar>
+        </h:form>
+        <hr/>
+
+        <div>
+            <div id="left">
+                <ui:insert name="left">
+                    <h:form>
+                        <h3 style="margin-top:0">Cliente</h3>
+                        <p:clock />
+                        <h3>Server</h3>
+                        <p:clock pattern="HH:mm:ss dd.MM.yyyy" mode="server" />
+                    </h:form>
+                </ui:insert>  
+            </div>
+        </div>
+
+        <div id="body">
+            <div id="content" class="left_content">
+                <ui:insert name="inicios" ></ui:insert> 
+                <ui:insert name="iniciose" ></ui:insert> 
+                <ui:insert name="misionvision"></ui:insert>
+                <ui:insert name="contactos" ></ui:insert>
+                <ui:insert name="bellezas" ></ui:insert>
+                <ui:insert name="peluquerias" ></ui:insert>
+                <ui:insert name="cosme" ></ui:insert>
+                <ui:insert name="corte" ></ui:insert>
+                <ui:insert name="cocina" ></ui:insert>
+                <ui:insert name="objetivos" ></ui:insert>
+                <ui:insert name="noticia" ></ui:insert>
+                
+            </div>
+        </div>
+
+
+        <div id="bottom">
+            <ui:insert name="bottom">
+                <h:body>
+                    <h:form>
+                        <center>
+                            <p id="p">Universidad Laica "Eloy Alfaro" de Manabí.</p>
+                            <br></br>
+                            <p:graphicImage value="/resources/images/logo-uleam.png"  width="300" height="100"/>
+                             <p:graphicImage value="/resources/images/facci.png"  width="300" height="100"/>
+                            <br></br>
+                            <p id="p">Facultad de Ciencias Informáticas 2017</p>
+                            <p id="p">Desarrolladores: Anthony Gabriel Aray Pico y Michelle Alejandra Alava Chavez.</p>
+                            <p id="p">Docente: Ing. Jorge Moya Delgado.</p>
+                        </center>
+                    </h:form> 
+                </h:body>
+            </ui:insert>
+        </div>
+    </h:body>
+</html>
+

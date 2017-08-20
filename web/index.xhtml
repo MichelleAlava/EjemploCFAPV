@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="template.xhtml"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="inicios">
+        <h:head>
+            <title>Inicio</title>
+            <h:outputStylesheet name="css/jsfcrud.css"/>
+        </h:head>
+        <style>
+            body {
+                background-color: white;
+            }
+
+            p {
+                font-family: Times New Roman;
+                font-size: 20px;
+            }
+            #p2 {
+                font-family: Times New Roman;
+                font-size: 20px;
+
+            }
+            #h3 {
+                font-family: Times New Roman;
+                font-size: 30px;
+            }
+        </style>
+        <h:body>
+            <h:form>
+                <p:outputPanel deferred="true">
+                    <center> 
+                        <h3 id="h3">Centro de Formación Artesanal "Victoria"</h3>
+                    </center>
+                </p:outputPanel>
+
+                <div style="height:10px"></div>
+
+                <p:contentFlow>
+                    <p:graphicImage value="/resources/images/cocina1.png"
+                                    styleClass="content" title="Curso de Cocina"/>
+                    <p:graphicImage value="/resources/images/belleza3.png"
+                                    styleClass="content" title="Curso de Bellaza"/>
+                    <p:graphicImage value="/resources/images/belleza2.png"
+                                    styleClass="content" title="Curso de Bellaza"/>
+                    <p:graphicImage value="/resources/images/logocentro.png"
+                                    styleClass="content" title="Centro de Formación Artesanal Victoria"/>
+                    <p:graphicImage value="/resources/images/masaje.png"
+                                    styleClass="content" title="Curso de Masaje"/>
+                    <p:graphicImage value="/resources/images/cocina2.png"
+                                    styleClass="content" title="Curso de Cocina"/>
+
+                </p:contentFlow>
+
+                <div style="height:40px"></div>
+
+                <p:outputPanel deferred="true" deferredMode="visible">
+                    <h1 id="p2">Regímenes de estudio:</h1>
+                    <p>Costa y Sierra</p>
+                    <h1 id="p2">Jornada de Formación:</h1>
+                    <p>Matutino y Nocturno</p>
+                    <h1 id="p2">Sostenimiento:</h1>
+                    <p>Particular</p>
+                    <h1 id="p2">Dirección:</h1>
+                    <p>Barrio Jocay calle J-1, lado muro de gaviones. Manta, Manabí, Ecuador.</p>
+                    <h1 id="p2">Teléfonos:</h1>
+                    <p>052921241</p>
+                    <h1 id="p2">Regímenes de estudio:</h1>
+                    <p>El Centro de Formación Artesanal Particular Victoria tiene como misión fundamental 
+                        satisfacer las necesidades y expectativas de la comunidad y el sector en las ramas 
+                        artesanales de Belleza; Peluquería; Cosmetología; Corte, Confección y Bordado; y Jefe de Cocina Chef, 
+                        mediante el desarrollo humano y capacitación profesional de sus instructores y facilitadores, 
+                        cuyo logro se refleja en una sólida formación, tanto artesanal como formativa de los participantes.</p>
+                    <h1 id="p2">Además la institución propone:</h1>
+                    <p>Fomentar Talleres con mano de obra calificada y cualificada
+                        Asesorar en la administración de talleres.
+                        Desarrollar los cursos con formadores e instructores de capacidad comprobada.
+                        Entregar un título profesional artesanal que garantice destrezas y conocimientos en los participantes.
+                    </p>
+                    <h1 id="p2">Descripción de la demanda de trabajo:</h1>
+                    <p>En el sector se ha determinado que la mayor demanda de trabajo se da en los medios productivos y comerciales privados: Pesca, Ferreterías, Farmacias, Centros Comerciales, Clínicas y otros. 
+                        <br></br>
+                        El nombre de Centro de Formación Artesanal Particular Victoria, es creada con el fin de dar un servicio de calidad y calidez desde el Cantón Manta con el afán de brindar un aporte al país en 
+                        la preparación de mano de obra calificada y cualificada en las ramas artesanales de: Belleza; Peluquería; Cosmetología; Corte, Confección y Bordado y Jefe de Cocina Chef, encaminados a la exce
+                        lencia en la atención, calidad, puntualidad y responsabilidad; los cuales son elementos característicos de nuestra institución que permiten desarrollar una formación con los niveles de calidad que la ciudadanía y el país se merece
+                    </p>
+                </p:outputPanel>
+                <br></br>
+            </h:form>
+        </h:body>
+
+
+
+
+    </ui:define>
+</ui:composition>
+
+
+

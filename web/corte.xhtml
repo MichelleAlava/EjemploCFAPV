@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    template="template.xhtml"
+    xmlns:p="http://primefaces.org/ui">
+    <ui:define name="corte">
+       <h:head>
+            <title>Corte, Confección y Bordado</title>
+        </h:head>
+        <style>
+            #body {
+                background-color: white;
+            }
+
+            p {
+                font-family: Times New Roman;
+                font-size: 20px;
+            }
+            #h3 {
+                font-family: Times New Roman;
+                font-size: 30px;
+            }
+        </style>
+        <h:body>
+            <h:form>
+                <p:outputPanel deferred="true" deferredMode="visible">
+                    <center>
+                        <h3 id="h3">Corte, Confección y Bordado</h3>
+                        <div style="height:10px"></div>
+                <p:contentFlow>
+                    <p:graphicImage value="/resources/images/corteyconfeccion.jpg"
+                                    styleClass="content" title="Práctica de confeccion de ropa"/>
+                    <p:graphicImage value="/resources/images/corteyconfeccion1.jpg"
+                                    styleClass="content" title="Práctica de corte de ropa"/>
+                    <p:graphicImage value="/resources/images/corteyconfeccion2.JPG"
+                                    styleClass="content" title="Práctica de corte y confeccion de ropa"/>
+                    <p:graphicImage value="/resources/images/corteyconfeccion3.jpg"
+                                    styleClass="content" title="Práctica de confeccion de ropa"/>
+                </p:contentFlow>
+                        
+                    </center>
+                    <p>El curso de Corte y Confección ofrece la posibilidad de realizar las diferentes prendas que conforman el vestuario femenino. Las participantes adquieren conocimientos de patronaje y confección que acaban
+                        materializando en la elaboración de prendas de plena actualidad incorporando siempre las últimas tendencias y tejidos adaptados a cada persona. </p>
+                    <div style="height:30px"></div>
+                    <h1 id="p2">OBJETIVOS:</h1>
+
+                    <p>•Aprender a tomar medidas y a hacer cálculos sobre la tela.</p>
+                   
+                    <p>•Dominar el trazado de los patrones y el corte de las prendas.</p>
+                    
+                    <p>•Controlar el uso de las herramientas de costura más importantes.</p>
+                    
+                    <p>•Adaptar modelos según las tallas y realizar todo tipo de arreglos y modernización de prendas.</p>
+                    
+                    <p>•Dominar el proceso de confección de una prenda: armar, probar y rematar.</p>
+                    <div style="height:30px"></div>
+                    
+                    <h1 id="p2">CONTENIDOS:</h1>
+                    <p>El curso está organizado de forma que puedas ir incrementando tus conocimientos de manera progresiva y de modo que se complementen los conceptos que aprendas en corte con los de confección.</p>
+                    <div style="height:30px"></div>
+
+                </p:outputPanel>
+
+                <br></br>
+            </h:form>
+        </h:body>
+ </ui:define>
+</ui:composition>
+

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="template.xhtml"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="misionvision">
+        <h:head>
+            <title>Mision y Vision</title>
+        </h:head>
+        <style>
+            #body {
+                background-color: white;
+            }
+
+            p {
+                font-family: Times New Roman;
+                font-size: 20px;
+            }
+            #h3 {
+                font-family: Times New Roman;
+                font-size: 30px;
+            }
+        </style>
+        <h:body>
+            <h:form>
+                <p:outputPanel deferred="true">
+                    <center> 
+                        <h3 id="h3">Centro de Formación Artesanal "Victoria"</h3>
+                        <p:graphicImage url="/resources/images/logo.jpg" style="height: 190px"/>
+                    </center>
+                </p:outputPanel>
+
+                <div style="height:10px"></div>
+
+                <p:outputPanel deferred="true" deferredMode="visible">
+                    <center> 
+                        <h3 id="h3">MISIÓN</h3>
+                        <p:graphicImage value="/resources/images/mision.png" style="height: 190px"/>
+                        <p>El Centro de Formación Artesanal Particular Victoria tiene como misión fundamental 
+                            satisfacer las necesidades y expectativas de la comunidad y el sector en las ramas 
+                            artesanales de Belleza; Peluquería; Cosmetología; Corte, Confección y Bordado; y Jefe de Cocina Chef, 
+                            mediante el desarrollo humano y capacitación profesional de sus instructores y facilitadores, 
+                            cuyo logro se refleja en una sólida formación, tanto artesanal como formativa de los participantes.</p>
+                    </center> 
+                </p:outputPanel>
+                <br></br>
+
+            </h:form> 
+        </h:body>
+    </ui:define>
+</ui:composition>
+

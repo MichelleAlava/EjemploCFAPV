@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      template="template.xhtml"
+      xmlns:p="http://primefaces.org/ui">
+      
+    <ui:define name="noticia">
+    
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+        <style>
+            #body {
+                background-color: white;
+            }
+
+            p {
+                font-family: Times New Roman;
+                font-size: 20px;
+            }
+            #h3 {
+                font-family: Times New Roman;
+                font-size: 30px;
+            }
+        </style>
+    <h:body>
+       <h:form>
+
+                <div style="height:10px"></div>
+
+                <p:outputPanel deferred="true" deferredMode="visible">
+                    <center> 
+                        <h1>Noticas destacadas:</h1>
+                        <p>Gran apertura del Centro de Formación Artesanal Particular "Victoria"!</p>
+                        <div style="height:10px"></div>
+                        <p:graphicImage value="/resources/images/noticiapertura.jpg"/>
+                        <br></br>
+                        <p:graphicImage value="/resources/images/noticia.jpg"/>
+                        <br></br>
+                        <p:graphicImage value="/resources/images/noticia2.jpg"/>
+                        <br></br>
+                        <p:graphicImage value="/resources/images/noticia1.jpg"/>
+                        <br></br>
+                        <div style="height:10px"></div>
+                    </center> 
+                </p:outputPanel>
+                <br></br>
+
+            </h:form> 
+    </h:body>
+    </ui:define>
+</ui:composition>
+
